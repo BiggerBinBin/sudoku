@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+<<<<<<< HEAD
+    <width>400</width>
+=======
+    <width>395</width>
+>>>>>>> 修复了若干BUG
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="qiujie_button">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>10</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>求解</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>191</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;请在下面的格子填入1-9的数字：&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+<<<<<<< HEAD
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>241</width>
+     <height>230</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_39"/>
+    </item>
+    <item row="4" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_40"/>
+    </item>
+    <item row="4" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_41"/>
+    </item>
+    <item row="4" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_42"/>
+    </item>
+    <item row="4" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_43"/>
+    </item>
+    <item row="4" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_44"/>
+    </item>
+    <item row="4" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_45"/>
+    </item>
+    <item row="5" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_46"/>
+    </item>
+    <item row="5" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_47"/>
+    </item>
+    <item row="5" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_48"/>
+    </item>
+    <item row="5" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_49"/>
+    </item>
+    <item row="5" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_50"/>
+    </item>
+    <item row="5" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_51"/>
+    </item>
+    <item row="5" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_52"/>
+    </item>
+    <item row="5" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_53"/>
+    </item>
+    <item row="5" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_54"/>
+    </item>
+    <item row="6" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_55"/>
+    </item>
+    <item row="6" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_56"/>
+    </item>
+    <item row="6" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_57"/>
+    </item>
+    <item row="6" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_58"/>
+    </item>
+    <item row="6" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_59"/>
+    </item>
+    <item row="6" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_60"/>
+    </item>
+    <item row="6" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_61"/>
+    </item>
+    <item row="6" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_62"/>
+    </item>
+    <item row="6" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_63"/>
+    </item>
+    <item row="7" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_64"/>
+    </item>
+    <item row="7" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_65"/>
+    </item>
+    <item row="7" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_66"/>
+    </item>
+    <item row="7" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_67"/>
+    </item>
+    <item row="7" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_68"/>
+    </item>
+    <item row="7" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_69"/>
+    </item>
+    <item row="7" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_70"/>
+    </item>
+    <item row="7" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_71"/>
+    </item>
+    <item row="7" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_72"/>
+    </item>
+    <item row="0" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_4"/>
+    </item>
+    <item row="0" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_5"/>
+    </item>
+    <item row="0" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_6"/>
+    </item>
+    <item row="0" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_7"/>
+    </item>
+    <item row="0" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_8"/>
+    </item>
+    <item row="0" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_9"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_10"/>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_11"/>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_12"/>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_13"/>
+    </item>
+    <item row="1" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_14"/>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_15"/>
+    </item>
+    <item row="1" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_16"/>
+    </item>
+    <item row="1" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_17"/>
+    </item>
+    <item row="1" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_18"/>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_19"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_20"/>
+    </item>
+    <item row="2" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_21"/>
+    </item>
+    <item row="2" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_22"/>
+    </item>
+    <item row="2" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_23"/>
+    </item>
+    <item row="2" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_24"/>
+    </item>
+    <item row="2" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_25"/>
+    </item>
+    <item row="2" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_26"/>
+    </item>
+    <item row="2" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_27"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_28"/>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_29"/>
+    </item>
+    <item row="3" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_30"/>
+    </item>
+    <item row="3" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_31"/>
+    </item>
+    <item row="3" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_32"/>
+    </item>
+    <item row="3" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_33"/>
+    </item>
+    <item row="3" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_34"/>
+    </item>
+    <item row="3" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_35"/>
+    </item>
+    <item row="3" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_36"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_37"/>
+    </item>
+    <item row="4" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_38"/>
+    </item>
+    <item row="8" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_73"/>
+    </item>
+    <item row="8" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_77"/>
+    </item>
+    <item row="8" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_75"/>
+    </item>
+    <item row="8" column="3">
+     <widget class="QLineEdit" name="cmdlineEdit_76"/>
+    </item>
+    <item row="8" column="4">
+     <widget class="QLineEdit" name="cmdlineEdit_78"/>
+    </item>
+    <item row="8" column="5">
+     <widget class="QLineEdit" name="cmdlineEdit_79"/>
+    </item>
+    <item row="8" column="6">
+     <widget class="QLineEdit" name="cmdlineEdit_80"/>
+    </item>
+    <item row="8" column="7">
+     <widget class="QLineEdit" name="cmdlineEdit_81"/>
+    </item>
+    <item row="8" column="8">
+     <widget class="QLineEdit" name="cmdlineEdit_82"/>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="cmdlineEdit_2"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QLineEdit" name="cmdlineEdit_3"/>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLineEdit" name="cmdlineEdit_1"/>
+    </item>
+   </layout>
+  </widget>
+=======
+>>>>>>> 修复了若干BUG
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>80</y>
+     <width>71</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;请在对应的&lt;/p&gt;&lt;p&gt;空格上填入&lt;/p&gt;&lt;p&gt;1-9的数字，&lt;/p&gt;&lt;p&gt;点击求解即&lt;/p&gt;&lt;p&gt;可得答案&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="qiujie_button_2">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>40</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>清空</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+<<<<<<< HEAD
+     <x>320</x>
+     <y>220</y>
+     <width>54</width>
+=======
+     <x>23</x>
+     <y>240</y>
+     <width>351</width>
+>>>>>>> 修复了若干BUG
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+<<<<<<< HEAD
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;技术支持：&lt;/p&gt;&lt;p&gt;by  彬彬&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+=======
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;技术支持：牛洞洛小彬彬 QQ：1091313282&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </widget>
+  <zorder>qiujie_button</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>qiujie_button_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>L1</zorder>
+  <zorder>L2</zorder>
+  <zorder>L3</zorder>
+  <zorder>L4</zorder>
+  <zorder>L5</zorder>
+  <zorder>L6</zorder>
+  <zorder>L7</zorder>
+  <zorder>L8</zorder>
+  <zorder>L9</zorder>
+  <zorder>L1</zorder>
+>>>>>>> 修复了若干BUG
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
