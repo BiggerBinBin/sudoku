@@ -5,11 +5,6 @@
 #include "ui_widget.h"
 #include "QLineEdit"
 #include <QDebug>
-<<<<<<< HEAD
-
-=======
-#include <QPainter>
->>>>>>> 修复了若干BUG
 int num[9][9]={0};
 bool sign = false;
 Widget::Widget(QWidget *parent) :
@@ -17,30 +12,40 @@ Widget::Widget(QWidget *parent) :
     ui(new Ui::Widget)
 {
     ui->setupUi(this);
-<<<<<<< HEAD
-    this->setMaximumSize(400,300);
-    this->setMinimumSize(400,300);
-
-   // QList <QLineEdit*> LineEdits = findChildren<QLineEdit *>();
-    //for(QList<QLineEdit*>::size_type i=0;i!=LineEdits.size();++i)
-   // {
-      //  LineEdits.at(i)->setText(QString::number(0));
-   // }
-=======
-    this->setWindowIcon(QIcon(":/new/prefix1/sudoku"));
-    this->setMaximumSize(400,300);
-    this->setMinimumSize(400,300);
+    this->setMaximumSize(400,400);
+    this->setMinimumSize(400,400);
     int i = 0;
     for(i=0; i<81; i++)
     {
         QLineEdit *bt=new QLineEdit(this);//注：最后一个参数一定为一个“父窗体”！
-        bt->setGeometry((i%9)*10*3+15, i/9*10*2+40, 30, 20); //x、y是相对于“父窗体”的位置，可以自己验证
+        bt->setGeometry((i%9)*10*3+20, i/9*10*3+40, 30, 30); //x、y是相对于“父窗体”的位置，可以自己验证
+        QRegExp regx("[1-9]^\\d+$");
+        QValidator *validator = new QRegExpValidator(regx, this);
+        bt->setValidator(validator);
+        if((i+1)%3==0)
+            bt->setStyleSheet("border-left:1px,dashed #cecccc;border-style:outset;"
+                              "border-top:1px,dashed #cecccc;border-style:outset;"
+                              "border-right-width: 1px,dashed #000000;border-style:outset;"
+                              "border-bottom: 1px;");
+
+        else
+            bt->setStyleSheet("border:1px,solid #000000;border-style:outset;");
+
+        if(i>=18 && i<=26 || i>=45&&i<=53 || i>=72&&i<=80)
+        {
+            bt->setStyleSheet("border-left:1px,solid #cecccc;border-style:outset;"
+                              "border-top:1px,solid #cecccc;border-style:outset;"
+                              "border-right: 1px,solid #cecccc;border-style:outset;"
+                              "border-bottom-width: 1px;");
+            if((i+1)%3==0)
+                bt->setStyleSheet("border-left:1px,solid #cecccc;border-style:outset;"
+                                  "border-top:1px,solid #cecccc;border-style:outset;"
+                                  "border-right-width: 1px,solid #000000;border-style:outset;"
+                                  "border-bottom-width: 1px;");
+        }
+
     }
 
-    QLineF line(10.0, 80.0, 90.0, 20.0);
-
-    QPainter painters(this);
-    painters.drawLine(line);
 
 
   /*  QList <QLineEdit*> LineEdits = findChildren<QLineEdit *>();
@@ -49,7 +54,6 @@ Widget::Widget(QWidget *parent) :
        LineEdits.at(i)->setText(QString::number(i));
    }
    */
->>>>>>> 修复了若干BUG
 }
 
 Widget::~Widget()
@@ -62,12 +66,10 @@ void Widget::on_qiujie_button_clicked()                             //求解按�
 {
 
     bool ok;
-<<<<<<< HEAD
-=======
     sign = false;                                                   //状态重置，不重置会出BUG
->>>>>>> 修复了若干BUG
     QString str;
-
+    for(int i=0;i<81;i++)
+        num[i/9][i%9]=0;
     QList <QLineEdit*> LineEdits = findChildren<QLineEdit *>();     //遍历控件，以获得用户输入的字符
     for(QList<QLineEdit*>::size_type i=0;i!=LineEdits.size();++i)
     {
@@ -147,11 +149,6 @@ void Widget::on_qiujie_button_2_clicked()   //重置函数
     QList <QLineEdit*> LineEdits = findChildren<QLineEdit *>();
     for(QList<QLineEdit*>::size_type i=0;i!=LineEdits.size();++i)
     {
-<<<<<<< HEAD
          LineEdits.at(i)->clear();
-=======
-         LineEdits.at(i)->setText(" ");
->>>>>>> 修复了若干BUG
     }
  }
-

@@ -3,10 +3,6 @@
 
 #include <QWidget>
 #include <QLineEdit>
-<<<<<<< HEAD
-
-=======
->>>>>>> 修复了若干BUG
 namespace Ui {
 class Widget;
 }
@@ -17,12 +13,8 @@ class Widget : public QWidget
 
 public:
     explicit Widget(QWidget *parent = 0);
-<<<<<<< HEAD
-    ~Widget();
-=======
      ~Widget();
 
->>>>>>> 修复了若干BUG
 
 private slots:
     void on_qiujie_button_clicked();
@@ -32,13 +24,10 @@ private slots:
 private:
     Ui::Widget *ui;
     QLineEdit *cmdLineEdit;
-<<<<<<< HEAD
-};
-=======
 
 };
 
->>>>>>> 修复了若干BUG
+
 bool Check(int n, int key);
 int DFS(int n);
 #endif // WIDGET_H
